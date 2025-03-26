@@ -1,12 +1,12 @@
-s = open('24 (2).txt').readline()
+s = open('24 (1).txt').readline()
 #s = 'ADGCBAGDTYRJNKFLSRBFCNDSUFJMALDFJFUS'
 p = ''
 mxp = ''
 for j in s:
     p += j
-    if p.count('D') < 3:
+    if p.count('A') < 2:
         if len(p) > len(mxp):
             mxp = p
     else:
-        p = ''
+        p = p[p.find('D')+1:]
 print(len(mxp))
