@@ -1,5 +1,5 @@
-s = open('24 (5).txt').readline()
-s = 'ZYXYXYZXYXYXYYZXYZYXXY'
+s = open('24 (13).txt').readline()
+#s = 'ZYXYXYZXYXYXYYZXYZYXXY'
 p = ''
 mxp = ''
 for i in s:
@@ -9,5 +9,5 @@ for i in s:
             if len(p) > len(mxp):
                 mxp = p
     else:
-        p = ''
+        p = p[p.find('Z')+1:]
 print(len(mxp))
