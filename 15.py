@@ -1,4 +1,4 @@
-s = open('24 (6).txt').readline()
+s = open('24 (14).txt').readline()
 #s = 'ARHDNGHAFNBFNAKDMFGHJAR'
 p = ''
 mxp = ''
@@ -9,5 +9,5 @@ for i in s:
             if len(p) > len(mxp):
                 mxp = p
     else:
-        p = ''
+        p = p[p.find('A')+1:]
 print(len(mxp))
